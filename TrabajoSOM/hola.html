@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            text-align: center;
+            margin: 20px;
+            color: #555;
+            font-size: 2.8em;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #444;
+            color: white;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            position: relative;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        nav ul li:hover {
+            background-color: #666;
+            transform: scale(1.1);
+        }
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            width: 200px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav ul li:hover ul {
+            display: block;
+            animation: slideDown 0.5s ease-out;
+        }
+        nav ul li ul li {
+            padding: 10px;
+            border-bottom: 1px solid #666;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        nav ul li ul li:hover {
+            background-color: #666;
+            transform: translateX(5px);
+        }
+        /* Quitar los estilos de enlace predeterminados */
+        a {
+            text-decoration: none;  /* Quitar subrayado */
+            color: inherit;         /* Mantener el color del texto del elemento padre */
+        }
+
+        /* Si quieres cambiar el color cuando el usuario pasa el ratón por encima del enlace */
+        nav ul li a:hover {
+            color: #fff;  /* Cambiar color al pasar el ratón */
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabajo presentación</h1>
+    <nav>
+        <ul>
+            <li>Usuarios</a>
+                <ul>
+
+                    <li><a href="Tutorial_Usuarios .pdf">Tutorial</a></li>
+                </ul>
+            </li>
+            <li>Script</a>
+                <ul>
+                    <li><a href="Usuarios.sh">Usuario.sh</a></li>
+                </ul>
+            </li>
+            <li>Usuarios y permisos</a>
+                <ul>
+                    <li><a href="Trabajo_Usuarios.pdf">Usuarios y permisos</a></li>
+                </ul>
+            </li>
+            <li>Compartir carpetas</a>
+                <ul>
+                    <li><a href="Compartir_carpeta.pdf">Tutorial</a></li>
+                </ul>
+            </li>
+            <li>Tutorial básico postinstalación</a>
+                <ul>
+
+                    <li><a href="Tutorial_Usuarios .pdf">Tutorial</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
